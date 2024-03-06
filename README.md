@@ -1,5 +1,6 @@
 # FastApi-JWT
 
+```
 Структура папок
 
 FastApi-JWT
@@ -58,3 +59,4 @@ FastApi-JWT
     │
     └───scopes
             scopes.py
+```
