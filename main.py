@@ -1,6 +1,5 @@
 from typing import AsyncGenerator
 from fastapi import FastAPI
-import uvicorn
 
 from src import UserRouter, AuthRouter
 
@@ -26,5 +25,6 @@ app = FastAPI(lifespan=lifespan,
 
 
 if __name__ == "__main__":
+    import uvicorn
     uvicorn.run('main:app', port=80, host='0.0.0.0', reload=True)
 
