@@ -11,7 +11,7 @@ class SerializatorDTO:
 
     @staticmethod
     def fromORM(
-        _from: Sequence[DeclarativeBase] | DeclarativeBase,
+        _from: Sequence[DeclarativeBase] | DeclarativeBase | str,
         _to: Type[BaseModel]
         ) -> Sequence[BaseModel] | BaseModel:
         if _from is None:
